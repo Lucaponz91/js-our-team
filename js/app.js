@@ -45,3 +45,13 @@ console.log(ourTeam)
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+let teamContainer = document.querySelector(".team_container");
+
+for (banane in ourTeam) {
+    teamContainer.innerHTML += `
+    <ul>
+        <li>${ourTeam[banane].nome}, ${ourTeam[banane].ruolo}</li>
+    </ul> 
+    `;
+}
